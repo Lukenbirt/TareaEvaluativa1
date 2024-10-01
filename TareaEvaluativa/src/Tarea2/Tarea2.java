@@ -45,7 +45,7 @@ public class Tarea2 {
             }            
                      
             // cierro el flujo de entrada
-            fic1.close(); //
+            fic1.close();
             
             // cierro el flujo de salida        
             fic2.close();
