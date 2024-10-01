@@ -82,54 +82,6 @@ public class Tarea4a {
 			// cierro el flujo de salida
 			fic.close();
 			
-			/*lectura de datos para comprobar que se ha creado bien el fichero
-			int id, peso, altura;
-			char dni[] = new char[9], aux1;
-			char nom[] = new char[10], aux2;
-			char identidad[] = new char[20], aux3;
-			char tipo[] = new char[10], aux4;
-			int posicion = 0;
-			
-			RandomAccessFile fic2 = new RandomAccessFile(new File ("src/Tarea4/Marvel.dat"), "r");
-			
-			while(fic2.getFilePointer() != fic2.length()) {
-				fic2.seek(posicion);
-				id = fic2.readInt();
-				
-				for(int i1 = 0; i1<dni.length; i1++) {
-					aux1 = fic2.readChar();
-					dni[i1] = aux1;				
-				}				
-				String dnis1 = new String (dni);
-				
-				for(int i2 = 0; i2<nom.length; i2++) {
-					aux2 = fic2.readChar();
-					nom[i2] = aux2;				
-				}				
-				String noms1 = new String (nom);
-				
-				for(int i3 = 0; i3<identidad.length; i3++) {
-					aux3 = fic2.readChar();
-					identidad[i3] = aux3;				
-				}				
-				String identidades1 = new String (identidad);
-				
-				for(int i4 = 0; i4<tipo.length; i4++) {
-					aux4 = fic2.readChar();
-					tipo[i4] = aux4;				
-				}				
-				String tipos1 = new String (tipo);
-				
-				peso = fic2.readInt();
-				altura = fic2.readInt();
-				
-				System.out.printf("ID: %d, DNI: %s, NOMBRE: %s, IDENTIDAD: %s, TIPO: %s, PESO: %d, ALTURA: %d %n", id, dnis1, noms1.trim(), identidades1.trim(), tipos1.trim(), peso, altura);
-				posicion = posicion + 110;
-			}
-			
-			fic2.close();
-			*/
-			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
