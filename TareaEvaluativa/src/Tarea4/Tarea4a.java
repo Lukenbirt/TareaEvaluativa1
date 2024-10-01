@@ -82,6 +82,9 @@ public class Tarea4a {
 			// cierro el flujo de salida
 			fic.close();
 			
+			// mensaje de visualización
+			System.out.println("La carga de los personajes ha terminado correctamente.");
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
